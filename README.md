@@ -23,7 +23,7 @@ A responsive web dashboard for managing CSI AITR events.
 
 ## Live Demo
 
-[View Live Demo](YOUR-LIVE-LINK)
+[View Live Demo](https://abhijeetrajput9.github.io/CSI-event-dashboard/)
 
 ## GitHub Repository
 
