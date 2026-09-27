@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Events Registration - CSI AITR</title>
+        <link rel="icon" href="CSILogo.jpg">
+        <link rel="stylesheet" href="../css/registration.css">
+
+    </head>
+
+
+    <body>
+
+
+        <!-- NAVBAR -->
+
+
+
+        <nav class="navbar">
+
+            <div class="logo">
+                <div class="logo-icon"><img src="CSILogo.jpg" alt=""></div>
+                <span>CSI AITR</span>
+            </div>
+
+
+            <div class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="events.html">
+                    Events
+                </a>
+
+                <a href="registration.html" class="active">
+                    Registrations
+                </a>
+
+                <a href="search.html">
+                    search
+                </a>
+            </div>
+
+        </nav>
+
+        <!-- MAIN -->
+
+        <main class="container">
+
+
+            <!-- PAGE HEADING -->
+
+            <div class="page-heading">
+
+                <h1>Event Registrations</h1>
+
+                <p>
+                    Register students and view event registrations.
+                </p>
+
+            </div>
+
+
+
+            <!-- REGISTRATION FORM -->
+
+            <div class="registration-form">
+
+                <h2>Register for an Event</h2>
+
+
+                <form id="registrationForm">
+
+
+                    <div class="form-group">
+
+                        <label for="studentName">
+                            Student Name
+                        </label>
+
+                        <input type="text" id="studentName" placeholder="Enter student name" required>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="studentEmail">
+                            Email
+                        </label>
+
+                        <input type="email" id="studentEmail" placeholder="Enter email" required>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="college">
+                            College
+                        </label>
+
+                        <input type="text" id="college" placeholder="Enter college name" required>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="eventSelect">
+                            Select Event
+                        </label>
+
+                        <select id="eventSelect" required>
+
+                            <option value="">
+                                Select Event
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <button type="submit" class="register-btn">
+                        Register Student
+                    </button>
+
+
+                </form>
+
+            </div>
+
+
+
+            <!-- REGISTRATION LIST -->
+
+            <div class="registration-section">
+
+                <div class="section-heading">
+
+                    <h2>Registered Students</h2>
+
+                    <p>
+                        Students registered for each event.
+                    </p>
+
+                </div>
+
+
+                <div id="registrationLists">
+
+                    <!-- JavaScript will add registration lists here -->
+
+                </div>
+
+            </div>
+
+
+        </main>
+
+
+        <script src="../js/registration.js"></script>
+
+    </body>
+
+</html>

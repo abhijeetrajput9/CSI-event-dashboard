@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSI Event Management Dashboard</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="CSILogo.jpg">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon"><img src="CSILogo.jpg" alt=""></div>
+            <span>CSI AITR</span>
+        </div>
+
+        <div class="sidebar-title">
+            Event Management Dashboard
+        </div>
+
+        <nav>
+            <a href="index.html" class="nav-link active">
+                🏠 <span>Home</span>
+            </a>
+
+            <a href="events.html" class="nav-link">
+                📅 <span>Events</span>
+            </a>
+
+            <a href="registration.html" class="nav-link">
+                👥 <span>Registrations</span>
+            </a>
+
+            <a href="search.html" class="nav-link">
+
+                🔍 <span>Search </span>
+            </a>
+        </nav>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- TOP BAR -->
+        <header class="topbar">
+
+            <div>
+                <h1>CSI Event Dashboard</h1>
+                <p>Manage events, registrations and participation.</p>
+            </div>
+
+            <div class="profile">
+                👤
+            </div>
+
+        </header>
+
+
+        <!-- WELCOME BANNER -->
+        <section class="welcome">
+
+            <div>
+                <h2>Welcome to CSI Event Dashboard</h2>
+
+                <p>
+                    Manage events, view registrations and track participation.
+                </p>
+            </div>
+
+            <div class="welcome-icon">
+                📅
+            </div>
+
+        </section>
+
+
+        <!-- STATISTICS -->
+        <section class="stats">
+
+            <div class="stat-card total">
+                <div class="stat-icon">📅</div>
+
+                <div>
+                    <h2 id="totalEvents">0</h2>
+                    <p>Total Events</p>
+                </div>
+            </div>
+
+
+            <div class="stat-card upcoming">
+                <div class="stat-icon">🗓️</div>
+
+                <div>
+                    <h2 id="upcomingEvents">0</h2>
+                    <p>Upcoming</p>
+                </div>
+            </div>
+
+
+            <div class="stat-card ongoing">
+                <div class="stat-icon">▶</div>
+
+                <div>
+                    <h2 id="ongoingEvents">0</h2>
+                    <p>Ongoing</p>
+                </div>
+            </div>
+
+
+            <div class="stat-card completed">
+                <div class="stat-icon">✓</div>
+
+                <div>
+                    <h2 id="completedEvents">0</h2>
+                    <p>Completed</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ACTIVE EVENTS -->
+        <section class="event-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <h2>📅 Upcoming Events</h2>
+                    <p>Upcoming and ongoing events</p>
+                </div>
+
+
+            </div>
+
+
+            <div id="activeEvents" class="event-grid">
+                <!-- JavaScript will add cards here -->
+            </div>
+
+        </section>
+
+
+        <!-- COMPLETED EVENTS -->
+        <section class="event-section">
+
+            <div class="section-heading">
+
+                <div>
+                    <h2>✓ Past / Completed Events</h2>
+                    <p>Events that have already finished</p>
+                </div>
+
+            
+
+            </div>
+
+
+            <div id="completedEventList" class="event-grid">
+                <!-- JavaScript will add cards here -->
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="../js/index.js"></script>
+
+</body>
+</html>

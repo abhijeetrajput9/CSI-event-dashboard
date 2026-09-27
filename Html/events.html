@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSI Event Management Dashboard</title>
+        <link rel="icon" href="CSILogo.jpg">
+        <link rel="stylesheet" href="../css/events.css">
+    </head>
+
+    <body>
+        <nav class="navbar">
+
+           <div class="logo">
+            <div class="logo-icon"><img src="CSILogo.jpg" alt=""></div>
+            <span>CSI AITR</span>
+        </div>
+
+
+            <div class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="events.html" class="active">
+                    Events
+                </a>
+
+                <a href="registration.html">
+                    Registrations
+                </a>
+                <a href="search.html">
+                    search
+                </a>
+            </div>
+
+        </nav>
+        <div class="event-form-container">
+
+            <h2 id="form-title">Add Event</h2>
+
+            <form id="event-form">
+
+                <input type="text" id="event-name" placeholder="Event Name" required>
+
+                <input type="date" id="event-date" required>
+
+                <input type="text" id="event-venue" placeholder="Venue" required>
+
+                <input type="text" id="event-speaker" placeholder="Speaker" required>
+
+                <input type="number" id="event-capacity" placeholder="Capacity" required>
+
+                <input type="number" id="event-registrations" placeholder="Registrations" required>
+
+                <label for="event-status">Status</label>
+
+                <select id="event-status" required>
+                    <option value="">Select Status</option>
+                    <option value="Upcoming">Upcoming</option>
+                    <option value="Ongoing">Ongoing</option>
+                    <option value="Completed">Completed</option>
+                </select>
+
+                <button type="submit" class="save-btn">Add Event</button>
+
+                <button type="button" id="cancel-btn">Cancel</button>
+
+            </form>
+
+        </div>
+
+        <!-- Cards will appear here -->
+
+        <div id="event-container" class="event-container"></div>
+        <script src="../js/events.js"></script>
+    </body>
+
+</html>

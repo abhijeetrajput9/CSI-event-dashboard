@@ -1,0 +1,498 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f4f7fb;
+    /* background-color: #172554; */
+
+    font-family: Arial, sans-serif;
+    color: #1e293b;
+}
+
+/* Search and Filter */
+
+.search-filter {
+    width: 90%;
+    max-width: 1200px;
+    margin: 25px auto;
+
+    display: flex;
+    gap: 15px;
+
+    background: white;
+    padding: 15px;
+
+    border-radius: 10px;
+}
+
+
+/* Search box */
+
+#searchInput {
+    flex: 1;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+
+/* Filter */
+
+#statusFilter {
+    width: 200px;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .search-filter {
+        flex-direction: column;
+    }
+
+    #statusFilter {
+        width: 100%;
+    }
+
+}
+
+
+
+/* add status */
+.form-group select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+
+    height: 70px;
+
+    background: #172b4d;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 40px;
+
+}
+.logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+/* logo img */
+ img{
+    height: 40px;
+    width: 40px;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+
+    background: white;
+
+    color: #1769e0;
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    gap: 20px;
+
+}
+
+
+.nav-links a {
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 15px;
+
+    border-radius: 6px;
+
+}
+
+
+.nav-links a:hover {
+
+    background: #23466f;
+
+}
+
+
+.nav-links a.active {
+
+    background: #2878df;
+
+}
+    
+.navbar-brand {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   MAIN HEADING
+========================= */
+
+.container > h1 {
+    color: #172554;
+    font-weight: 700;
+}
+
+
+/* =========================
+   FORM CARD
+========================= */
+
+.event-form-container {
+    max-width: 900px;
+
+    margin: 30px auto;
+
+    padding: 30px;
+
+    background: #ffffff;
+
+    border-radius: 16px;
+
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+
+    border: 1px solid #e2e8f0;
+    /* background-color: #172554; */
+
+}
+
+
+.event-form-container h2 {
+    margin-bottom: 25px;
+
+    color: #172554;
+
+    font-size: 25px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+#event-form {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 18px;
+}
+
+
+.form-group {
+    margin-bottom: 5px;
+}
+
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-weight: 600;
+
+    color: #334155;
+}
+
+
+.form-group input {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+
+.form-group input:focus {
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* =========================
+   FORM BUTTONS
+========================= */
+
+.form-buttons {
+    grid-column: 1 / -1;
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 5px;
+}
+
+
+.save-btn,
+.cancel-btn {
+    padding: 11px 22px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    font-weight: 600;
+}
+
+
+.save-btn {
+    background: #2563eb;
+
+    color: white;
+}
+
+
+.save-btn:hover {
+    background: #1d4ed8;
+}
+
+
+.cancel-btn {
+    background: #e2e8f0;
+
+    color: #334155;
+}
+
+
+.cancel-btn:hover {
+    background: #cbd5e1;
+}
+
+
+/* =========================
+   EVENTS HEADING
+========================= */
+
+.container > h2 {
+    color: #172554;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   EVENT CONTAINER
+========================= */
+
+.event-container {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 22px;
+}
+
+
+/* =========================
+   EVENT CARD
+========================= */
+
+.event-card {
+    width: calc(50% - 11px);
+
+    padding: 24px;
+
+    background: #ffffff;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 14px;
+
+    box-shadow: 0 5px 18px rgba(15, 23, 42, 0.07);
+
+    transition: transform 0.2s, box-shadow 0.2s;
+
+    position: relative;
+}
+
+
+.event-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
+}
+
+
+.event-card h3 {
+    margin-top: 0;
+
+    margin-bottom: 18px;
+
+    color: #172554;
+
+    font-size: 20px;
+}
+
+
+.event-card p {
+    margin: 10px 0;
+
+    color: #475569;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   CARD BUTTONS
+========================= */
+
+.card-buttons {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #e2e8f0;
+}
+
+
+.edit-btn,
+.delete-btn {
+    padding: 9px 18px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+}
+
+
+.edit-btn {
+    background: #f59e0b;
+
+    color: white;
+}
+
+
+.edit-btn:hover {
+    background: #d97706;
+}
+
+
+.delete-btn {
+    background: #ef4444;
+
+    color: white;
+}
+
+
+.delete-btn:hover {
+    background: #dc2626;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    #event-form {
+        grid-template-columns: 1fr;
+    }
+
+
+    .form-buttons {
+        grid-column: auto;
+    }
+
+
+    .event-card {
+        width: 100%;
+    }
+
+
+    .event-form-container {
+        margin: 20px 0;
+
+        padding: 20px;
+    }
+
+
+    .container > h1 {
+        font-size: 28px;
+    }
+
+}

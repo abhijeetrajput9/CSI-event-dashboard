@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Search Events - CSI AITR</title>
+        <link rel="icon" href="CSILogo.jpg">
+
+        <link rel="stylesheet" href="../css/search.css">
+
+    </head>
+
+
+    <body>
+
+        <!-- NAVBAR -->
+
+        <nav class="navbar">
+            <div class="logo">
+                <div class="logo-icon"><img src="CSILogo.jpg" alt=""></div>
+                <span>CSI AITR</span>
+            </div>
+
+
+            <div class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="events.html">
+                    Events
+                </a>
+
+
+                <a href="registration.html">
+                    Registrations
+                </a>
+
+
+                <a href="search.html" class="active">
+                    Search
+                </a>
+
+            </div>
+
+        </nav>
+
+
+
+        <!-- MAIN -->
+
+        <main class="container">
+
+
+            <h1>Search Events</h1>
+
+            <p class="subtitle">
+                Search and filter events.
+            </p>
+
+
+
+            <!-- SEARCH AND FILTER -->
+
+            <div class="search-area">
+
+                <div class="search-box">
+
+                    <span>🔍</span>
+
+                    <input type="text" id="searchInput" placeholder="Search events...">
+
+                </div>
+
+
+                <select id="statusFilter">
+
+                    <option value="All">
+                        All Status
+                    </option>
+
+                    <option value="Upcoming">
+                        Upcoming
+                    </option>
+
+                    <option value="Ongoing">
+                        Ongoing
+                    </option>
+
+                    <option value="Completed">
+                        Completed
+                    </option>
+
+                </select>
+
+            </div>
+
+
+
+            <!-- RESULT COUNT -->
+
+            <div class="result-heading">
+
+                <h2>Events</h2>
+
+                <span id="resultCount"></span>
+
+            </div>
+
+
+
+            <!-- EVENT CARDS -->
+
+            <div id="eventContainer" class="event-container">
+
+                <!-- JavaScript will create cards here -->
+
+            </div>
+
+
+        </main>
+
+
+
+        <script src="../js/search.js"></script>
+
+    </body>
+
+</html>
